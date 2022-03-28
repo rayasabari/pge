@@ -1,9 +1,9 @@
 <template>
   <div>
     <NavBar></NavBar>
-    <Content>
+    <Container class="min-h-screen py-6 mt-12 md:mt-14">
       <Nuxt></Nuxt>
-    </Content>
+    </Container>
     <Footer></Footer>
   </div>
 </template>
@@ -21,6 +21,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>
