@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between w-full">
         <div class="z-50 flex items-center justify-between w-full md:w-auto">
           <!-- Brand Logo -->
-          <NuxtLink exact to="/" class="text-lg font-semibold">{{brand}}</NuxtLink>
+          <NuxtLink event to="/" class="text-lg font-semibold text-gray-400">{{brand}}</NuxtLink>
 
           <!-- Toggle Menu -->
           <div class="static md:hidden">
@@ -40,7 +40,6 @@
             <li class="px-3" v-for="menu in menus" :key="menu.name">
               <NuxtLink
                 :exact="menu.name == 'Home' ? true : false"
-                active-class="text-blue-600 hover:text-blue-600"
                 :to="menu.link"
                 class="text-sm font-medium text-gray-400 transition duration-300 hover:text-gray-600"
               >{{menu.name}}</NuxtLink>
@@ -56,8 +55,6 @@
         <ul class="flex flex-col justify-between pt-4">
           <li class="py-2" v-for="menu in menus" :key="menu.name" @click="isOpen = false">
             <NuxtLink
-              :exact="menu.name == 'Home' ? true : false"
-              active-class="text-blue-600 hover:text-blue-600"
               :to="menu.link"
               class="text-xl font-medium text-gray-400 transition duration-300 hover:text-gray-600"
             >{{menu.name}}</NuxtLink>
@@ -99,8 +96,18 @@ export default {
       ],
     };
   },
+  methods: {
+    isActiveClass(link) {},
+  },
 };
 </script>
 
 <style>
+a.nuxt-link-active {
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+/* exact link will show the primary color for only the exact matching link */
+a.nuxt-link-exact-active {
+  color: rgb(14 165 233 / var(--tw-text-opacity));
+}
 </style>
