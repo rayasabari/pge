@@ -40,7 +40,7 @@
             <li class="px-3" v-for="menu in menus" :key="menu.name">
               <NuxtLink
                 :exact="menu.name == 'Home' ? true : false"
-                active-class="text-blue-400"
+                active-class="text-blue-600 hover:text-blue-600"
                 :to="menu.link"
                 class="text-sm font-medium text-gray-400 transition duration-300 hover:text-gray-600"
               >{{menu.name}}</NuxtLink>
@@ -57,7 +57,7 @@
           <li class="py-2" v-for="menu in menus" :key="menu.name" @click="isOpen = false">
             <NuxtLink
               :exact="menu.name == 'Home' ? true : false"
-              active-class="text-blue-400"
+              active-class="text-blue-600 hover:text-blue-600"
               :to="menu.link"
               class="text-xl font-medium text-gray-400 transition duration-300 hover:text-gray-600"
             >{{menu.name}}</NuxtLink>
