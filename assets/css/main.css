@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .text-exact-active {
+    @apply text-gray-400;
+  }
+
+  a.nuxt-link-active {
+    
+  }
+  a.nuxt-link-exact-active {
+    @apply text-blue-500 hover:text-blue-500;
+  }
+}

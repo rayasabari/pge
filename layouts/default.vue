@@ -1,9 +1,7 @@
 <template>
   <div>
     <NavBar></NavBar>
-    <Container class="min-h-screen py-6 mt-12 md:mt-14">
-      <Nuxt></Nuxt>
-    </Container>
+    <Nuxt></Nuxt>
     <Footer></Footer>
   </div>
 </template>

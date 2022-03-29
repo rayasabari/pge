@@ -1,15 +1,12 @@
 <template>
-  <div>
-    About Page
-  </div>
+  <Page>
+    <Container>About Page</Container>
+  </Page>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
 </style>

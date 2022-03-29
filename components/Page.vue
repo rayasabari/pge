@@ -1,9 +1,7 @@
 <template>
-  <Page>
-    <Container>
-      News Page
-    </Container>
-  </Page>
+  <div class="min-h-screen py-6 mt-12 md:mt-16">
+    <slot></slot>
+  </div>
 </template>
 
 <script>

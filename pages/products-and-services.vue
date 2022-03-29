@@ -1,15 +1,12 @@
 <template>
-  <div>
-    Products & Services Page
-  </div>
+  <Page>
+    <Container>Products & Services Page</Container>
+  </Page>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
 </style>
