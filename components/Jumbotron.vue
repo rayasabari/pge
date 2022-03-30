@@ -14,7 +14,7 @@
             >{{image.caption}}</div>
             <div
               class="leading-loose text-center text-white md:text-lg text-md text-opacity-60"
-            >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, reiciendis?</div>
+            >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, reiciendis</div>
           </div>
         </div>
       </div>
