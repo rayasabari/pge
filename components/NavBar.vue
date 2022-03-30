@@ -84,7 +84,7 @@ export default {
   data() {
     return {
       isOpen: false,
-      brand: "Nuxt",
+      brand: "Prodigy Green Energy",
       menus: [
         {
           name: "Home",
