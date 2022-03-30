@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed top-0 left-0 right-0 z-50 w-full py-3 transition duration-300 bg-white border-b shadow-sm bg-opacity-90 md:py-5 backdrop-filter backdrop-blur"
+    class="fixed top-0 left-0 right-0 z-50 w-full py-3 transition duration-300 bg-transparent bg-opacity-75 shadow-sm md:py-5 backdrop-filter backdrop-blur"
   >
     <Container>
       <div class="flex items-center justify-between w-full">
@@ -84,7 +84,7 @@ export default {
   data() {
     return {
       isOpen: false,
-      brand: "Prodigy Green Energy",
+      brand: "Nuxt",
       menus: [
         {
           name: "Home",
