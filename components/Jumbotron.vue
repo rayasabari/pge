@@ -3,10 +3,19 @@
     <agile :options="options">
       <div class="slide" v-for="image in images" :key="image.caption">
         <div
-          class="flex items-center justify-center w-full h-screen bg-center bg-cover"
+          class="w-full h-screen bg-center bg-cover"
           :style="`background-image: url(${image.src})`"
         >
-          <div class="text-4xl font-medium text-center text-white md:text-5xl">{{image.caption}}</div>
+          <div
+            class="flex flex-col items-center justify-center w-full h-full backdrop-blur backdrop-brightness-75"
+          >
+            <div
+              class="text-2xl font-medium leading-loose text-center text-white md:mb-2 md:text-4xl"
+            >{{image.caption}}</div>
+            <div
+              class="leading-loose text-center text-white md:text-lg text-md text-opacity-60"
+            >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, reiciendis?</div>
+          </div>
         </div>
       </div>
     </agile>
@@ -26,6 +35,8 @@ export default {
         fade: true,
         speed: 2000,
         navButtons: false,
+        pauseOnHover: false,
+        pauseOnDotsHover: true,
       },
     };
   },
