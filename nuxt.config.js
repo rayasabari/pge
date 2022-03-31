@@ -43,11 +43,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/eslint-module',
     '@nuxt/postcss8',
   ],
-
-  buildDir: 'nuxt-dist',
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
