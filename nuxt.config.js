@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'server',
@@ -46,6 +46,8 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxt/postcss8',
   ],
+
+  buildDir: 'nuxt-dist',
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

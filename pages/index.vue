@@ -17,6 +17,7 @@ export default {
   mixins: [aosMixin],
   data() {
     return {
+      test: [],
       images: [
         {
           src: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80",
@@ -33,6 +34,16 @@ export default {
       ],
     };
   },
-  methods: {},
+  mounted() {
+    this.fetchSomething();
+  },
+  methods: {
+    async fetchSomething() {
+      const res = await this.$axios.$get(
+        "https://jsonplaceholder.typicode.com/users"
+      );
+      this.test = res;
+    },
+  },
 };
 </script>
