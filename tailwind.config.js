@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -22,7 +23,11 @@ module.exports = {
       full: '100%',
       screen: 'calc(var(--vh) * 100)',
     }),
-    extend: {},
+    extend: {
+      colors: {
+        primary: colors.teal
+      }
+    },
   },
   plugins: [
   ],

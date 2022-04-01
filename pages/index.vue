@@ -1,23 +1,35 @@
 <template>
-  <div class="min-h-screen pb-6">
+  <div class="min-h-screen pb-8">
     <Hero :images="images" />
-    <Container class="py-5">
-      <div data-aos="fade">Main Page</div>
-      <div v-for="user in test" :key="user.name" data-aos="fade">
-        {{ user.name }}
-      </div>
-    </Container>
+    <section>
+      <Container class="py-5">
+        <div class="flex flex-col w-full space-y-8 md:space-y-0 md:flex-row md:space-x-12">
+          <CardWelcome
+            data-aos="fade"
+            :data-aos-duration="1000"
+            title="Welcome"
+            paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde est sint et. Dolore unde delectus doloremque laborum! Maiores eos laboriosam perferendis blanditiis mollitia voluptate quam itaque minus deserunt, incidunt delectus nostrum, facilis quidem possimus minima sequi voluptatum libero voluptatem ipsum eius, in modi distinctio! Ea omnis suscipit illo in repudiandae."
+            link="/"
+          ></CardWelcome>
+          <CardWelcome
+            data-aos="fade"
+            :data-aos-duration="1000"
+            title="Business Overview"
+            paragraph="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam velit aut, ipsum ullam sunt nesciunt praesentium impedit vero accusantium laboriosam commodi illum adipisci odio perspiciatis dolor ex minus iure amet reprehenderit laborum porro veniam cum neque. Voluptatem fugit repellendus error voluptates deleniti, esse minus quaerat."
+            link="/"
+          ></CardWelcome>
+        </div>
+      </Container>
+    </section>
   </div>
 </template>
 
 <script>
 import Hero from "../components/Hero.vue";
-import aosMixin from "../mixins/aos";
 
 export default {
   components: { Hero },
   name: "IndexPage",
-  mixins: [aosMixin],
   data() {
     return {
       test: [],

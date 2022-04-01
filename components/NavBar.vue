@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed top-0 left-0 right-0 z-50 w-full py-3 transition duration-300 bg-transparent bg-opacity-75 shadow-sm md:py-5 backdrop-filter backdrop-blur"
+    class="fixed top-0 left-0 right-0 z-50 w-full py-3 transition duration-300 bg-white shadow-sm bg-opacity-80 md:py-6 backdrop-blur"
   >
     <Container>
       <div class="flex items-center justify-between w-full">
@@ -10,11 +10,11 @@
             exact
             to="/"
             exact-active-class="text-exact-active"
-            class="text-lg font-semibold text-gray-400"
+            class="font-semibold text-gray-600 text-md md:text-xl"
           >{{brand}}</NuxtLink>
 
           <!-- Toggle Menu -->
-          <div class="static md:hidden">
+          <div class="flex items-center md:hidden">
             <button class="focus:outline-none focus:ring-0" type="button" @click="isOpen = !isOpen">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,14 +41,14 @@
           </div>
         </div>
 
-        <!-- Navigation -->
+        <!-- Desktop Navigation -->
         <nav class="hidden md:block">
           <ul class="flex justify-between w-full">
             <li class="px-5" v-for="menu in menus" :key="menu.name">
               <NuxtLink
                 :exact="menu.link == '/' ? true : false"
                 :to="menu.link"
-                class="text-sm text-gray-500 transition duration-300 hover:text-gray-900"
+                class="font-semibold text-gray-600 transition duration-300 text-md hover:text-primary-400"
               >{{menu.name}}</NuxtLink>
             </li>
           </ul>
@@ -59,16 +59,19 @@
     <!-- Mobile Navigation -->
     <transition
       name="custom-classes-transition"
-      enter-active-class="animate__animated animate__fadeInRight animate__faster"
-      leave-active-class="animate__animated animate__fadeOutRight animate__faster"
+      enter-active-class="animate__animated animate__slideInUp animate__faster"
+      leave-active-class="animate__animated animate__slideOutDown animate__faster"
     >
-      <nav v-if="isOpen" class="absolute w-full h-screen py-2 bg-white top-14 md:hidden">
+      <nav
+        v-if="isOpen"
+        class="absolute w-full h-screen py-2 bg-white border-t rounded-t-2xl top-96 md:hidden"
+      >
         <Container>
           <ul class="flex flex-col justify-between">
             <li v-for="menu in menus" :key="menu.name" @click="isOpen = false">
               <NuxtLink
                 :to="menu.link"
-                class="block py-2 text-gray-500 transition duration-300 text-md hover:text-gray-600"
+                class="block py-2 text-lg text-gray-600 transition duration-300 hover:text-gray-600"
               >{{menu.name}}</NuxtLink>
             </li>
           </ul>

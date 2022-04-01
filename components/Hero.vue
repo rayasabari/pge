@@ -1,32 +1,42 @@
 <template>
-  <div>
+  <section>
     <agile :options="options">
       <div class="slide" v-for="image in images" :key="image.caption">
         <div
           class="w-full h-screen bg-center bg-cover"
           :style="`background-image: url(${image.src})`"
         >
-          <div
-            class="flex flex-col items-center justify-center w-full h-full backdrop-blur backdrop-brightness-75"
-          >
-            <div data-aos="fade" :data-aos-duration="1000" :data-aos-delay="500"
-              class="text-2xl font-medium leading-loose text-center text-white md:mb-2 md:text-4xl"
-            >{{image.caption}}</div>
-            <div
-              data-aos="fade-up" :data-aos-duration="800" :data-aos-delay="1200"
-              class="leading-loose text-center text-white md:text-lg text-md text-opacity-60"
-            >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, reiciendis?</div>
+          <div class="w-full h-full backdrop-blur backdrop-brightness-75">
+            <Container class="flex flex-col items-center justify-center w-full h-full md:w-1/2">
+              <div
+                data-aos="fade"
+                :data-aos-duration="1000"
+                :data-aos-delay="500"
+                class="mb-2 text-3xl font-medium text-center text-white md:leading-tight md:text-5xl"
+              >Lorem ipsum dolor sit amet consectetur</div>
+              <div
+                data-aos="fade"
+                :data-aos-duration="1000"
+                :data-aos-delay="1000"
+                class="mb-2 text-center text-white md:mb-0 text-md md:text-xl text-opacity-60"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iste animi amet tempora soluta dignissimos.!</div>
+              <div data-aos="fade" :data-aos-duration="1000" :data-aos-delay="1500">
+                <Button>Get Started</Button>
+              </div>
+            </Container>
           </div>
         </div>
       </div>
     </agile>
-  </div>
+  </section>
 </template>
 
 <script>
+import aosMixins from "../mixins/aos";
 export default {
   name: "Hero",
   props: ["images"],
+  mixins: { aosMixins },
   data() {
     return {
       options: {
@@ -34,6 +44,7 @@ export default {
         autoplaySpeed: 5000,
         pauseOnHover: false,
         fade: true,
+        dots: false,
         speed: 2000,
         navButtons: false,
         pauseOnHover: false,

@@ -1,7 +1,7 @@
 <template>
-  <div class="bottom-0 w-full text-gray-300 bg-gray-700 ">
+  <div class="bottom-0 w-full text-gray-300 bg-gray-700">
     <Container>
-      <div class="py-4 h-14">&copy; 2022 All Right Reserved</div>
+      <div class="flex items-center justify-center py-4 text-xs h-14">&copy; 2022 All Rights Reserved</div>
     </Container>
   </div>
 </template>

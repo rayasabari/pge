@@ -7,8 +7,10 @@
 </template>
 
 <script>
+// import aosMixins from "../mixins/aos";
 export default {
   name: "DefaultLayout",
+  // mixins: [aosMixins],
   head: {
     htmlAttrs: {
       class: "scroll-smooth",
