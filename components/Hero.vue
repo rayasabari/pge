@@ -9,10 +9,11 @@
           <div
             class="flex flex-col items-center justify-center w-full h-full backdrop-blur backdrop-brightness-75"
           >
-            <div
+            <div data-aos="fade" :data-aos-duration="1000" :data-aos-delay="500"
               class="text-2xl font-medium leading-loose text-center text-white md:mb-2 md:text-4xl"
             >{{image.caption}}</div>
             <div
+              data-aos="fade-up" :data-aos-duration="800" :data-aos-delay="1200"
               class="leading-loose text-center text-white md:text-lg text-md text-opacity-60"
             >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, reiciendis?</div>
           </div>
@@ -24,7 +25,7 @@
 
 <script>
 export default {
-  name: "Jumbotron",
+  name: "Hero",
   props: ["images"],
   data() {
     return {

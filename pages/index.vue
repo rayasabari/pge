@@ -1,18 +1,21 @@
 <template>
   <div class="min-h-screen pb-6">
-    <Jumbotron :images="images" />
+    <Hero :images="images" />
     <Container class="py-5">
       <div data-aos="fade">Main Page</div>
+      <div v-for="user in test" :key="user.name" data-aos="fade">
+        {{ user.name }}
+      </div>
     </Container>
   </div>
 </template>
 
 <script>
-import Jumbotron from "../components/Jumbotron.vue";
+import Hero from "../components/Hero.vue";
 import aosMixin from "../mixins/aos";
 
 export default {
-  components: { Jumbotron },
+  components: { Hero },
   name: "IndexPage",
   mixins: [aosMixin],
   data() {
