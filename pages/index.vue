@@ -89,19 +89,28 @@
           <div
             v-for="(item,index) in latestNews"
             :key="index"
-            class="overflow-hidden transition duration-300 bg-white bg-center bg-cover shadow-md rounded-xl group hover:shadow-xl hover:-translate-y-1"
-            :style="`background-image: url(${item.image}${index})`"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            :data-aos-delay="600 + (index * 150)"
+            class="group"
           >
-            <div class="w-full h-full p-5 transition duration-300 bg-white bg-opacity-90 group-hover:backdrop-blur">
-              <NuxtLink :to="item.link">
-                <div
-                  class="text-lg h-[70px] transition duration-300 text-primary-500 group-hover:text-primary-600 font-medium border-b"
-                >{{ item.title }}</div>
-                <div
-                  class="h-[120px] text-gray-700 transition duration-300 text-opacity-70 group-hover:text-opacity-100 py-4"
-                >{{item.body}}</div>
-                <div class="pt-4 text-gray-400">{{ item.date }}</div>
-              </NuxtLink>
+            <div
+              class="w-full h-full overflow-hidden transition duration-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 rounded-xl"
+              :style="`background-image: url(${item.image}${index})`"
+            >
+              <div
+                class="p-5 duration-300 bg-white transitino bg-opacity-90 group-hover:backdrop-blur"
+              >
+                <NuxtLink :to="item.link">
+                  <div
+                    class="text-lg h-[70px] transition duration-300 text-primary-500 group-hover:text-primary-600 font-medium border-b"
+                  >{{ item.title }}</div>
+                  <div
+                    class="h-[120px] text-gray-700 transition duration-300 text-opacity-70 group-hover:text-opacity-100 py-4"
+                  >{{item.body}}</div>
+                  <div class="pt-4 text-gray-400">{{ item.date }}</div>
+                </NuxtLink>
+              </div>
             </div>
           </div>
         </div>
