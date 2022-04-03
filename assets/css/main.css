@@ -8,6 +8,7 @@
   }
 
   a.nuxt-link-active {
+    @apply text-red-500
   }
   a.nuxt-link-exact-active {
     @apply text-primary-500 hover:text-primary-500;

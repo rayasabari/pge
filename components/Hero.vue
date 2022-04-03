@@ -1,7 +1,7 @@
 <template>
   <section>
     <agile :options="options">
-      <div class="slide" v-for="image in images" :key="image.caption">
+      <div class="slide" v-for="(image,index) in images" :key="index">
         <div
           class="w-full h-screen bg-center bg-cover"
           :style="`background-image: url(${image.src})`"

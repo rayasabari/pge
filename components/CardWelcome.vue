@@ -1,10 +1,10 @@
 <template>
-  <div class="w-full text-center p-7 rounded-xl md:w-1/2 md:text-left">
-    <h2 class="mb-1 text-2xl font-semibold md:mb-3 text-primary-700">{{ title }}</h2>
-    <p class="py-4 text-lg">{{paragraph}}</p>
+  <div class="w-full p-5 text-center bg-white shadow-lg md:shadow-none rounded-xl md:text-left">
+    <SectionTitle>{{title}}</SectionTitle>
+    <p class="mb-3 leading-relaxed">{{paragraph}}</p>
     <a
       :href="link"
-      class="text-lg font-semibold transition duration-500 text-primary-400 hover:text-primary-500"
+      class="font-semibold transition duration-500 text-md text-primary-400 hover:text-primary-500"
     >Read More</a>
   </div>
 </template>
