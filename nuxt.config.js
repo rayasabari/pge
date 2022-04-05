@@ -61,12 +61,4 @@ export default {
       },
     },
   },
-
-  // Loading Indicator
-  // loadingIndicator: {
-  //   name: 'folding-cube',
-  //   color: '#3B8070',
-  //   background: 'white'
-  // }
-
 }

@@ -1,5 +1,5 @@
 <template>
-  <section class="">
+  <section class>
     <agile :options="options">
       <div class="slide" v-for="(image,index) in images" :key="index">
         <div
@@ -8,9 +8,7 @@
         ></div>
       </div>
     </agile>
-    <div
-      class="absolute top-0 flex items-center w-full h-full backdrop-blur backdrop-brightness-75"
-    >
+    <div class="absolute top-0 flex items-center w-full h-full backdrop-blur backdrop-brightness-75">
       <Container class="flex flex-col items-center justify-center w-full h-full md:w-1/2">
         <div
           data-aos="fade"
