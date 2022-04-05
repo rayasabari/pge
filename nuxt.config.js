@@ -38,7 +38,6 @@ export default {
     { src: './plugins/aos.js', mode: 'client' },
   ],
 
-
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -61,5 +60,13 @@ export default {
         autoprefixer: {},
       },
     },
-  }
+  },
+
+  // Loading Indicator
+  // loadingIndicator: {
+  //   name: 'folding-cube',
+  //   color: '#3B8070',
+  //   background: 'white'
+  // }
+
 }

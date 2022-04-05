@@ -6,14 +6,16 @@
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
           <CardWelcome
             data-aos="fade"
-            :data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-duration="1000"
             title="Welcome"
             paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde est sint et. Dolore unde delectus doloremque laborum! Maiores eos laboriosam perferendis blanditiis mollitia voluptate quam itaque minus deserunt, incidunt delectus nostrum, facilis quidem possimus minima sequi voluptatum libero voluptatem ipsum eius, in modi distinctio! Ea omnis suscipit illo in repudiandae."
             link="/"
           ></CardWelcome>
           <CardWelcome
             data-aos="fade"
-            :data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-duration="1000"
             title="Business Overview"
             paragraph="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam velit aut, ipsum ullam sunt nesciunt praesentium impedit vero accusantium laboriosam commodi illum adipisci odio perspiciatis dolor ex minus iure amet reprehenderit laborum porro veniam cum neque. Voluptatem fugit repellendus error voluptates deleniti, esse minus quaerat."
             link="/"
@@ -25,11 +27,21 @@
       <div class="w-full h-full bg-gradient-to-r from-white to-transparent">
         <Container class="py-5 md:py-16">
           <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div data-aos="fade" class="p-5 bg-white bg-opacity-30 rounded-2xl backdrop-blur-lg">
+            <div
+              data-aos="fade"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              class="p-5 bg-white bg-opacity-30 rounded-2xl backdrop-blur-lg"
+            >
               <SectionTitle>Downloadable Content</SectionTitle>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore aut fugit pariatur obcaecati sapiente perferendis repellat eligendi laborum, consectetur suscipit voluptas quo reprehenderit distinctio sit quos eius nostrum? Harum, expedita?</p>
             </div>
-            <div data-aos="fade" class="flex justify-center">
+            <div
+              data-aos="fade"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              class="flex justify-center"
+            >
               <iframe
                 class="overflow-hidden rounded-2xl"
                 width="560"
@@ -91,12 +103,12 @@
             :key="index"
             data-aos="fade-up"
             data-aos-duration="500"
-            :data-aos-delay="600 + (index * 150)"
+            :data-aos-delay="300 + (index * 150)"
             class="group"
           >
             <div
               class="w-full h-full overflow-hidden transition duration-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 rounded-xl"
-              :style="`background-image: url(${item.image}${index})`"
+              :style="`background-image: url(${item.image})`"
             >
               <div
                 class="p-5 duration-300 bg-white transitino bg-opacity-90 group-hover:backdrop-blur"
