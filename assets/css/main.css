@@ -7,10 +7,14 @@
     @apply text-gray-500;
   }
 
-  a.nuxt-link-active {
-    @apply text-red-500
+  .text-link-active{
+    @apply text-primary-500;
   }
-  a.nuxt-link-exact-active {
+
+  /* a.nuxt-link-active {
+    @apply
+  } */
+  /* a.nuxt-link-exact-active {
     @apply text-primary-500 hover:text-primary-500;
-  }
+  }  */
 }

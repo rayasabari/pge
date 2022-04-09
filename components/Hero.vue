@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative h-screen">
     <agile :options="options" class="h-screen">
       <div class="slide" v-for="(image,index) in images" :key="index">
         <div

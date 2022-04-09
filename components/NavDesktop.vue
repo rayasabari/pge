@@ -4,7 +4,7 @@
       <li class="pl-10 " v-for="menu in menus" :key="menu.name">
         <NuxtLink
           :exact="menu.link == '/' ? true : false"
-          active-class="text-primary-500"
+          active-class="text-link-active"
           :to="menu.link"
           class="font-medium text-gray-600 transition duration-300 text-md hover:text-primary-500"
         >{{menu.name}}</NuxtLink>
