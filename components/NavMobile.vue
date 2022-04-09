@@ -5,9 +5,9 @@
         <li v-for="menu in menus" :key="menu.name" @click="hideMenu">
           <NuxtLink
             :exact="menu.link == '/' ? true : false"
-            active-class="text-primary-500"
+            active-class="text-link-active"
             :to="menu.link"
-            class="block py-1 text-lg text-gray-600 transition duration-300 hover:text-primary-500"
+            class="block py-3 font-medium text-gray-500 transition duration-300 border-b text-md hover:text-primary-500"
           >{{menu.name}}</NuxtLink>
         </li>
       </ul>

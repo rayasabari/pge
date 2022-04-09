@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-10 mt-12">
+  <div class="flex flex-col gap-6 mt-8 md:gap-6">
     <div
       v-for="item in news"
       :key="item.title"
@@ -22,7 +22,7 @@
         <div>
           <div class="pt-4 pb-2">{{ item.excerpt }}</div>
           <div>
-            <NuxtLink to="/" class="text-primary-500 hover:text-primary-600">Read More</NuxtLink>
+            <NuxtLink to="/" class="font-medium text-primary-500 hover:text-primary-600">Read More</NuxtLink>
           </div>
         </div>
       </div>

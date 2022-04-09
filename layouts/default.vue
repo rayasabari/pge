@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import { Loading } from "notiflix/build/notiflix-loading-aio";
 export default {
   name: "DefaultLayout",
   head: {

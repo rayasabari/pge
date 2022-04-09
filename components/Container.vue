@@ -1,15 +1,12 @@
 <template>
-  <div class="container px-4 mx-auto lg:px-0">
+  <div class="container px-4 mx-auto">
     <slot></slot>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
 </style>

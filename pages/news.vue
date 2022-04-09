@@ -1,18 +1,13 @@
 <template>
   <div class="min-h-screen">
     <Breadcrumb :title="'News'"></Breadcrumb>
-    <div id="page-content">
-      <Container class="flex flex-col gap-20 py-5 md:gap-8 md:flex-row md:py-20">
-        <div class="w-full md:w-9/12">
-          <section data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-            <SectionTitle class="text-center">News</SectionTitle>
-            <CardNews :news="news" />
-          </section>
-        </div>
-        <div class="w-full md:w-3/12">
-          <SideBar></SideBar>
-        </div>
-      </Container>
+    <div id="page-content" class="pt-10 md:pt-0">
+      <PageContainer>
+        <section data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <SectionTitle class="text-center md:text-left">News</SectionTitle>
+          <CardNews :news="news" />
+        </section>
+      </PageContainer>
     </div>
   </div>
 </template>

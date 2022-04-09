@@ -14,7 +14,7 @@
         >
           <NuxtLink
             :to="menu.link"
-            active-class="pl-3 border-l-4 border-teal-500 bg-gray-50 text-primary-500"
+            active-class="link-active-side"
             class="block px-4 py-3 font-medium transition-all duration-500 border-gray-300 hover:bg-gray-50 hover:text-primary-500 hover:border-l-4 hover:border-primary-500"
           >{{menu.name}}</NuxtLink>
         </li>
@@ -25,7 +25,9 @@
       <p
         class="text-sm text-primary-50"
       >Contact us at the Prodigy Green Energy office nearest to you or submit a business inquiry online.</p>
-      <Button>Contact Us</Button>
+      <div class="mt-5 mb-2">
+        <NuxtLink to="/contact-us" class="btn-pge">Contact Us</NuxtLink>
+      </div>
     </div>
   </div>
 </template>
