@@ -1,10 +1,8 @@
 <template>
   <div>
-    <div v-if="!loading">
-      <NavBar></NavBar>
-      <Nuxt></Nuxt>
-      <Footer></Footer>
-    </div>
+    <NavBar></NavBar>
+    <Nuxt></Nuxt>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -26,14 +24,14 @@ export default {
     };
   },
   mounted() {
-    Loading.dots({
-      backgroundColor: "#fff",
-      svgColor: "#14b8a6",
-    });
-    setTimeout(() => {
-      this.loading = false;
-      Loading.remove();
-    }, 700);
+    // Loading.dots({
+    //   backgroundColor: "#fff",
+    //   svgColor: "#14b8a6",
+    // });
+    // setTimeout(() => {
+    //   this.loading = false;
+    //   Loading.remove();
+    // }, 700);
     this.setViewHeight();
     window.addEventListener("resize", () => {
       this.setViewHeight();

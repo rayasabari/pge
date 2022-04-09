@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed top-0 left-0 right-0 z-50 w-full py-3 transition duration-300 bg-white shadow-sm bg-opacity-80 md:py-6 backdrop-blur-lg"
+    class="fixed top-0 left-0 right-0 z-50 w-full py-4 transition duration-300 bg-white shadow-sm bg-opacity-80 md:py-6 backdrop-blur-lg"
   >
     <Container>
       <div class="flex items-center justify-between w-full">
@@ -90,7 +90,6 @@ export default {
   },
   mounted() {
     this.$root.$on("hideMenu", () => {
-      console.log("asdf");
       this.isOpen = false;
     });
   },

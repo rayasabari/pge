@@ -23,8 +23,8 @@
         </div>
       </Container>
     </section>
-    <section class="bg-downloadable-section bg-conver">
-      <div class="w-full h-full bg-gradient-to-r from-white to-transparent">
+    <section data-aos="fade-up" data-aos-duration="800" class="bg-downloadable-section bg-conver">
+      <div class="w-full h-full md:bg-gradient-to-r md:from-white md:to-transparent">
         <Container class="py-5 md:py-16">
           <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div
@@ -141,15 +141,15 @@ export default {
       test: [],
       images: [
         {
-          src: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80",
+          src: "https://www.tbsenergi.com/app/sam/assets/images/e511286a99df2c7466aeae8fcca5851b.jpg?v=1623770296",
           caption: " Lorem ipsum dolor sit amet.",
         },
         {
-          src: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          src: "https://www.tbsenergi.com/app/sam/assets/images/5c2c816d4d55b68e65e26359f1e3a940.png?v=1632725589",
           caption: " Lorem ipsum dolor sit amet.",
         },
         {
-          src: "https://images.unsplash.com/photo-1467533003447-e295ff1b0435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          src: "https://www.tbsenergi.com/app/sam/assets/images/8ba7c0967969ab511686523693854cf8.jpg?v=1623770297",
           caption: " Lorem ipsum dolor sit amet.",
         },
       ],
@@ -163,13 +163,13 @@ export default {
               "https://www.tbsenergi.com/app/sam/assets/images/f07d3a35cdaccc8ccbff57dae5f22bb7.jpg?v=1632196062",
           },
           {
-            name: "Minig Coal",
+            name: "Mining Coal",
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, quisquam reiciendis labore illo dolorem commodi?",
             image:
               "https://www.tbsenergi.com/app/sam/assets/images/0ecbec8935e06b14a5bba736f0344586.jpg?v=1632196422",
           },
           {
-            name: "Plantatin PKU",
+            name: "Plantation PKU",
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, quisquam reiciendis labore illo dolorem commodi?",
             image:
               "https://www.tbsenergi.com/app/sam/assets/images/a931aa9e1337d218818ff703bf7bf4b5.jpg?v=1623770296",
