@@ -39,8 +39,12 @@ export default {
     return {
       menus: [
         {
-          name: "About Us",
-          link: "/about-us",
+          name: "Company Overview",
+          link: "/company-overview",
+        },
+        {
+          name: "Management Profiles",
+          link: "/management-profiles",
         },
         {
           name: "Products & Services",

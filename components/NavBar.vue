@@ -1,5 +1,5 @@
 <template>
-  <header
+  <section
     class="fixed top-0 left-0 right-0 z-50 w-full py-4 transition duration-300 bg-white shadow-sm bg-opacity-80 md:py-6 backdrop-blur-lg"
   >
     <Container>
@@ -54,7 +54,7 @@
     >
       <NavMobile v-if="isOpen" :menus="menus" />
     </transition>
-  </header>
+  </section>
 </template>
 
 <script>
@@ -70,8 +70,12 @@ export default {
           link: "/",
         },
         {
-          name: "About Us",
-          link: "/about-us",
+          name: "Company Overview",
+          link: "/company-overview",
+        },
+        {
+          name: "Management Profiles",
+          link: "/management-profiles",
         },
         {
           name: "Products & Services",

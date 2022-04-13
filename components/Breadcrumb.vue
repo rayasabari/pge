@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen realtive">
+  <section class="min-h-screen realtive">
     <agile :options="options">
       <div class="slide" v-for="(image,index) in images" :key="index">
         <div class="w-full bg-center bg-cover" :style="`background-image: url(${image.src})`">
@@ -29,7 +29,7 @@
         </div>
       </div>
     </agile>
-  </div>
+  </section>
 </template>
 
 <script>
