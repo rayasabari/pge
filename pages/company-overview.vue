@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen">
-    <Breadcrumb :title="'About Us'"></Breadcrumb>
+    <Breadcrumb :title="'Company Overview'"></Breadcrumb>
     <div id="page-content">
       <PageContainer>
         <section
