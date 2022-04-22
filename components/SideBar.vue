@@ -14,9 +14,22 @@
         >
           <NuxtLink
             :to="menu.link"
+            :event="!menu.sub ? 'click': ''"
             active-class="link-active-side"
             class="block px-4 py-3 font-medium transition-all duration-500 border-gray-300 hover:bg-gray-50 hover:text-primary-500 hover:border-l-4 hover:border-primary-500"
           >{{menu.name}}</NuxtLink>
+          <div v-if="menu.sub">
+            <ul>
+              <li v-for="sub in menu.sub" :key="sub.link">
+                <NuxtLink
+                  :to="sub.link"
+                  :event="!sub.sub ? 'click': ''"
+                  active-class="sub-link-active-side"
+                  class="block py-3 text-sm transition-all duration-500 border-gray-300 px-7 hover:bg-gray-50 hover:text-primary-500"
+                >{{sub.name}}</NuxtLink>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </nav>
@@ -33,32 +46,12 @@
 </template>
 
 <script>
+import listMenu from "../services/data/listMenu";
 export default {
   name: "Sidebar",
   data() {
     return {
-      menus: [
-        {
-          name: "Company Overview",
-          link: "/company-overview",
-        },
-        {
-          name: "Management Profiles",
-          link: "/management-profiles",
-        },
-        {
-          name: "Products & Services",
-          link: "/products-and-services",
-        },
-        {
-          name: "News",
-          link: "/news",
-        },
-        {
-          name: "Contact Us",
-          link: "/contact-us",
-        },
-      ],
+      menus: listMenu,
     };
   },
 };

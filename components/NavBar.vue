@@ -1,9 +1,9 @@
 <template>
   <section
-    class="fixed top-0 left-0 right-0 z-50 w-full py-4 transition duration-300 bg-white shadow-sm bg-opacity-80 md:py-6 backdrop-blur-lg"
+    class="fixed top-0 left-0 right-0 z-50 w-full transition duration-300 bg-white shadow-sm bg-opacity-80 backdrop-blur-lg"
   >
     <Container>
-      <div class="flex items-center justify-between w-full">
+      <div class="flex items-center justify-between w-full py-4 md:py-6">
         <div class="flex items-center justify-between w-full lg:w-auto">
           <!-- Brand Logo -->
           <NuxtLink
@@ -58,38 +58,14 @@
 </template>
 
 <script>
+import listMenu from '../services/data/listMenu';
 export default {
   name: "NavBar",
   data() {
     return {
       isOpen: false,
       brand: "Prodigy Green Energy",
-      menus: [
-        {
-          name: "Home",
-          link: "/",
-        },
-        {
-          name: "Company Overview",
-          link: "/company-overview",
-        },
-        {
-          name: "Management Profiles",
-          link: "/management-profiles",
-        },
-        {
-          name: "Products & Services",
-          link: "/products-and-services",
-        },
-        {
-          name: "News",
-          link: "/news",
-        },
-        {
-          name: "Contact Us",
-          link: "/contact-us",
-        },
-      ],
+      menus: listMenu
     };
   },
   mounted() {
