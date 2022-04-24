@@ -9,7 +9,11 @@
     >
       <div class="flex flex-col w-full md:w-3/12">
         <div>
-          <img :src="data.photo" :alt="data.name" class="w-full object-cover object-top rounded-lg h-[190px] md:h-auto" />
+          <img
+            :src="data.photo"
+            :alt="data.name"
+            class="w-full object-cover object-top rounded-lg max-h-[190px] md:h-auto"
+          />
         </div>
         <div class="mt-3 text-xl font-semibold text-primary-500">{{ data.name }}</div>
         <div class="font-medium">{{ data.role }}</div>

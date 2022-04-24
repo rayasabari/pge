@@ -46,22 +46,22 @@ export default {
         {
           name: "Service One",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus veniam hic.",
-          svg: require("../assets/icons/service1.svg"),
+          svg: require("@/assets/icons/service1.svg"),
         },
         {
           name: "Service Two",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus veniam hic.",
-          svg: require("../assets/icons/service2.svg"),
+          svg: require("@/assets/icons/service2.svg"),
         },
         {
           name: "Service Three",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus veniam hic.",
-          svg: require("../assets/icons/service3.svg"),
+          svg: require("@/assets/icons/service3.svg"),
         },
         {
           name: "Service Four",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus veniam hic.",
-          svg: require("../assets/icons/service4.svg"),
+          svg: require("@/assets/icons/service4.svg"),
         },
       ],
     };
