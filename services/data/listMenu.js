@@ -1,19 +1,19 @@
 const listMenu = [
   {
-    name: "About Us",
-    link: "/about-us",
+    name: "About",
+    link: "/about",
     sub: [
       {
-        name: "Company Overview",
-        link: "/about-us/company-overview",
+        name: "Company",
+        link: "/about/company",
+      },
+      {
+        name: "Our Values",
+        link: "/about/our-values",
       },
       {
         name: "Management Profiles",
-        link: "/about-us/management-profiles",
-      },
-      {
-        name: "Corporate Information",
-        link: "/about-us/corporate-information",
+        link: "/about/management-profiles",
       },
     ],
   },
