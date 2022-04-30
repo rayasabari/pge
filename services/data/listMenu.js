@@ -1,43 +1,71 @@
 const listMenu = [
   {
-    name: "About Us",
-    link: "/about-us",
+    name: "About",
+    link: "/about",
     sub: [
       {
-        name: "Company Overview",
-        link: "/about-us/company-overview",
+        name: "Company",
+        link: "/about/company",
+      },
+      {
+        name: "Our Values",
+        link: "/about/our-values",
       },
       {
         name: "Management Profiles",
-        link: "/about-us/management-profiles",
-      },
-      {
-        name: "Corporate Information",
-        link: "/about-us/corporate-information",
+        link: "/about/management-profiles",
       },
     ],
   },
   {
-    name: "Products & Services",
-    link: "/products-and-services",
+    name: "Expertise",
+    link: "/expertise",
     sub: [
       {
-        name: "Renewable Energy",
-        link: "/products-and-services/renewable-energies",
+        name: "Expertise and Services",
+        link: "/expertise/expertise-and-services",
       },
       {
-        name: "Services",
-        link: "/products-and-services/services",
+        name: "Technology",
+        link: "/expertise/technology",
       },
     ],
   },
   {
-    name: "Our Projects",
-    link: "/our-projects",
+    name: "Projects",
+    link: "/projects",
+    sub: [
+      {
+        name: "Our Projects",
+        link: "/projects/our-projects",
+      },
+      {
+        name: "Projects Schema",
+        link: "/projects/projects-schema",
+      },
+      {
+        name: "Projects and Achievments",
+        link: "/projects/projects-and-achievments",
+      },
+    ],
   },
   {
-    name: "News",
-    link: "/news",
+    name: "Media",
+    link: "/media",
+    sub: [
+      {
+        name: "Press Release",
+        link: "/media/press-release",
+      },
+      {
+        name: "Latest News",
+        link: "/media/latest-news",
+      },
+      {
+        name: "Specials Features",
+        link: "/media/special-features",
+      },
+    ],
   },
   {
     name: "Contact Us",

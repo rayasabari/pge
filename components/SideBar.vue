@@ -16,16 +16,16 @@
             :to="menu.link"
             :event="!menu.sub ? 'click': ''"
             active-class="link-active-side"
-            class="block px-4 py-3 font-medium transition-all duration-500 border-gray-300 hover:bg-gray-50 hover:text-primary-500 hover:border-l-4 hover:border-primary-500"
+            class="block px-4 py-2 font-medium transition-all duration-500 border-gray-300 text-md hover:bg-gray-50 hover:text-primary-500 hover:border-l-4 hover:border-primary-500"
           >{{menu.name}}</NuxtLink>
           <div v-if="menu.sub">
-            <ul>
-              <li v-for="sub in menu.sub" :key="sub.link">
+            <ul class="pb-2">
+              <li v-for="sub in menu.sub" :key="sub.link" class="">
                 <NuxtLink
                   :to="sub.link"
                   :event="!sub.sub ? 'click': ''"
                   active-class="sub-link-active-side"
-                  class="block py-3 text-sm transition-all duration-500 border-gray-300 px-7 hover:bg-gray-50 hover:text-primary-500"
+                  class="block py-2 text-xs transition-all duration-500 border-gray-300 px-7 hover:bg-gray-50 hover:text-primary-500"
                 >{{sub.name}}</NuxtLink>
               </li>
             </ul>
@@ -33,15 +33,7 @@
         </li>
       </ul>
     </nav>
-    <div class="p-5 text-center text-white rounded-lg bg-primary-700 md:text-left">
-      <h3 class="mb-2 text-lg font-semibold">How can we help you?</h3>
-      <p
-        class="text-sm text-primary-50"
-      >Contact us at the Prodigy Green Energy office nearest to you or submit a business inquiry online.</p>
-      <div class="mt-5 mb-2">
-        <NuxtLink to="/contact-us" class="btn-pge">Contact Us</NuxtLink>
-      </div>
-    </div>
+    <!-- <SideCta></SideCta> -->
   </div>
 </template>
 

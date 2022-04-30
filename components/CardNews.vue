@@ -3,7 +3,7 @@
     <div
       v-for="item in news"
       :key="item.title"
-      class="flex flex-col w-full gap-1 overflow-hidden transition-all duration-300 border border-gray-200 rounded-lg shadow md:flex-row group hover:shadow-lg"
+      class="flex flex-col w-full gap-1 overflow-hidden transition-all duration-300 border border-gray-100 rounded-lg shadow md:flex-row group hover:shadow-lg"
     >
       <div
         class="w-full h-[200px] md:h-auto overflow-hidden bg-center bg-cover md:w-4/12"
