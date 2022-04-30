@@ -1,10 +1,10 @@
 <template>
   <div class="min-h-screen">
-    <Breadcrumb :title="'Our Projects'"></Breadcrumb>
+    <Breadcrumb :title="'Special Features'"></Breadcrumb>
     <div id="page-content" class="pt-10 md:pt-0">
       <PageContainer>
         <section data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-          <SectionTitle class="text-center md:text-left">Projects</SectionTitle>
+          <SectionTitle class="text-center md:text-left">Special Features</SectionTitle>
           <CardNews :news="news" />
         </section>
       </PageContainer>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: "News",
+  name: "SpecialsFeatures",
   data() {
     return {
       news: [
