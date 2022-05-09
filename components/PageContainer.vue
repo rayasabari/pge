@@ -1,5 +1,5 @@
 <template>
-  <Container class="flex flex-col gap-20 py-5 md:gap-8 md:flex-row md:py-20">
+  <Container class="flex flex-col gap-20 py-5 md:gap-8 md:flex-row md:py-8">
     <div class="flex flex-col w-full gap-8 md:w-9/12">
       <slot></slot>
     </div>
