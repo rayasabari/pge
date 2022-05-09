@@ -12,7 +12,7 @@
         <transition name="page">
           <div
             v-if="menu.sub"
-            class="absolute hidden py-2 mt-2 text-sm transition-all duration-300 bg-white rounded-lg shadow-lg hover:block group-hover:block bg-opacity-90 font-base w-60 backdrop-blur"
+            class="absolute hidden py-2 mt-2 text-sm transition-all duration-300 bg-white border border-gray-100 rounded-lg shadow-lg hover:block group-hover:block bg-opacity-90 font-base w-60 backdrop-blur"
           >
             <ul class="flex flex-col py-1">
               <li v-for="sub in menu.sub" :key="sub.link" class="block">
@@ -36,7 +36,7 @@ export default {
   name: "NavDesktop",
   props: ["menus"],
   mounted() {
-    console.log(this.$router.currentRoute.path.split("/"));
+    // console.log(this.$router.currentRoute.path.split("/"));
   },
   methods: {},
 };
