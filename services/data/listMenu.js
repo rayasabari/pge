@@ -1,33 +1,29 @@
 const listMenu = [
   {
-    name: "About",
-    link: "/about",
+    name: "Company",
+    link: "/company",
     sub: [
       {
-        name: "Company",
-        link: "/about/company",
-      },
-      {
         name: "Our Values",
-        link: "/about/our-values",
+        link: "/company/our-values",
       },
       {
         name: "Management Profiles",
-        link: "/about/management-profiles",
+        link: "/company/management-profiles",
       },
     ],
   },
   {
-    name: "Expertise",
-    link: "/expertise",
+    name: "Our Expertise",
+    link: "/our-expertise",
     sub: [
       {
-        name: "Expertise and Services",
-        link: "/expertise/expertise-and-services",
+        name: "Our Services",
+        link: "/our-expertise/our-services",
       },
       {
         name: "Technology",
-        link: "/expertise/technology",
+        link: "/our-expertise/technology",
       },
     ],
   },
@@ -35,10 +31,6 @@ const listMenu = [
     name: "Projects",
     link: "/projects",
     sub: [
-      {
-        name: "Our Projects",
-        link: "/projects/our-projects",
-      },
       {
         name: "Projects Schema",
         link: "/projects/projects-schema",

@@ -24,8 +24,8 @@
             <span>Home</span>
           </NuxtLink>
         </li>
-        <template v-for="menu in menus">
-          <li :key="menu+'icon'">
+        <template v-for="(menu, index) in menus" >
+          <li :key="index+'icon'">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="w-5 h-5 text-gray-300"
@@ -39,7 +39,14 @@
               />
             </svg>
           </li>
-          <li :key="menu+'name'">{{ucWords(menu)}}</li>
+          <li :key="index+'menu'">
+            <span v-if="menus.length - 1 === index">
+              {{ucWords(menu)}}
+            </span>
+            <span v-else>
+              <NuxtLink :to="'/'+menu" class="transition duration-300 hover:text-primary-500">{{ucWords(menu)}}</NuxtLink>
+            </span>
+          </li>
         </template>
       </ul>
     </Container>
