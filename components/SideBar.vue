@@ -14,7 +14,6 @@
         >
           <NuxtLink
             :to="menu.link"
-            :event="!menu.sub ? 'click': ''"
             active-class="link-active-side"
             class="block px-4 py-2 font-medium transition-all duration-500 border-gray-300 text-md hover:bg-gray-50 hover:text-primary-500 hover:border-l-4 hover:border-primary-500"
           >{{menu.name}}</NuxtLink>

@@ -6,7 +6,6 @@
           :exact="menu.link == '/' ? true : false"
           active-class="text-link-active"
           :to="menu.link"
-          :event="!menu.sub ? 'click': ''"
           class="py-4 font-medium text-gray-600 transition duration-300 md:py-6 text-md hover:text-primary-500"
         >{{menu.name}}</NuxtLink>
         <transition name="page">

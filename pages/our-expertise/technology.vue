@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'Services'
+  name: 'Technology'
 };
 </script>
 

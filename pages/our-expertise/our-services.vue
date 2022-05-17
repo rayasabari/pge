@@ -3,14 +3,6 @@
     <Breadcrumb :title="'Our Expertise'"></Breadcrumb>
     <div id="page-content" class="pt-10 md:pt-0">
       <PageContainer>
-        <section data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-          <SectionTitle class="text-center md:text-left">Our Expertise</SectionTitle>
-          <div
-            class="mb-8 text-center md:text-left"
-          >To meet the renewable energy requirement in Indonesia, Prodigy Green Energy continually innovate to produce sustainable renewable energy, such as:</div>
-          <CardExpertise :expertise="expertise" />
-          <!-- <CardProducts :products="products" /> -->
-        </section>
         <section class="mt-12" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
           <SectionTitle class="text-center md:text-left">Our Services</SectionTitle>
           <div
@@ -25,7 +17,7 @@
 
 <script>
 export default {
-  name: "OurExpertise",
+  name: "Services",
   data() {
     return {
       expertise: [
