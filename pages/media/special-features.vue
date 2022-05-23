@@ -1,10 +1,10 @@
 <template>
   <div class="min-h-screen">
     <Breadcrumb :title="'Special Features'"></Breadcrumb>
-    <div id="page-content" class="pt-10 md:pt-0">
+    <div id="page-content">
       <PageContainer>
         <section data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-          <SectionTitle class="text-center md:text-left">Special Features</SectionTitle>
+          <SectionTitle>Special Features</SectionTitle>
           <CardNews :news="news" />
         </section>
       </PageContainer>
