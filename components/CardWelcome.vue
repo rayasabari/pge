@@ -2,10 +2,10 @@
   <div class="w-full p-5 text-center bg-white shadow-lg md:shadow-none rounded-xl md:text-left">
     <SectionTitle>{{title}}</SectionTitle>
     <p class="mb-3 leading-relaxed">{{paragraph}}</p>
-    <a
+    <!-- <a
       :href="link"
       class="font-semibold transition duration-500 text-md text-primary-400 hover:text-primary-500"
-    >Read More</a>
+    >Read More</a> -->
   </div>
 </template>
 

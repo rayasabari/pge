@@ -8,7 +8,7 @@
             <SectionTitle class="text-center md:text-left">Technology</SectionTitle>
             <div
               class="mb-8 text-center md:text-left"
-            >Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+            >Prodigy Green Energy is in next-generation renewable technologies. Renewable energy industry stakeholders are considering investments in them, which can eventually help to confidently integrate variable renewables such as wind, solar, green hydrogen advanced batteries and other form renewable energy form into the electric grid. A major driving force behind the rise of green energy has been the decreasing costs of renewable energy. Indonesia and energy companies are also responding to this opportunity and ramping up renewable energies. Besides that, also in an evolving mechanical and battery storage technologies offering long-duration energy storage options and supporting the grid.</div>
           </section>
         </PageContainer>
       </div>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'Technology'
+  name: "Technology",
 };
 </script>
 
