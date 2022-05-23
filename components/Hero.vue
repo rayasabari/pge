@@ -13,13 +13,13 @@
                 :data-aos-duration="1000"
                 :data-aos-delay="500"
                 class="mb-2 text-3xl font-medium text-center text-white md:leading-tight md:text-5xl"
-              >Lorem ipsum dolor sit amet consectetur</div>
+              > Switch to one of the renewable energy provider</div>
               <div
                 data-aos="fade"
                 :data-aos-duration="1000"
                 :data-aos-delay="1000"
                 class="mb-2 text-center text-white md:mb-0 text-md md:text-xl text-opacity-60"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iste animi amet tempora soluta dignissimos.!</div>
+              >and you'll reduce your carbon footprint and your reduce electric bills</div>
               <div data-aos="fade" :data-aos-duration="1000" :data-aos-delay="1500">
                 <Button>Get Started</Button>
               </div>

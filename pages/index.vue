@@ -9,7 +9,7 @@
             data-aos-delay="300"
             data-aos-duration="1000"
             title="Welcome"
-            paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde est sint et. Dolore unde delectus doloremque laborum! Maiores eos laboriosam perferendis blanditiis mollitia voluptate quam itaque minus deserunt, incidunt delectus nostrum, facilis quidem possimus minima sequi voluptatum libero voluptatem ipsum eius, in modi distinctio! Ea omnis suscipit illo in repudiandae."
+            :paragraph="welcome"
             link="/"
           ></CardWelcome>
           <CardWelcome
@@ -17,7 +17,7 @@
             data-aos-delay="300"
             data-aos-duration="1000"
             title="Business Overview"
-            paragraph="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam velit aut, ipsum ullam sunt nesciunt praesentium impedit vero accusantium laboriosam commodi illum adipisci odio perspiciatis dolor ex minus iure amet reprehenderit laborum porro veniam cum neque. Voluptatem fugit repellendus error voluptates deleniti, esse minus quaerat."
+            :paragraph="businessOverview"
             link="/"
           ></CardWelcome>
         </div>
@@ -94,7 +94,9 @@
         </div>
       </Container>
     </section>
-    <section class="bg-gray-100">
+
+    <!-- Latest News -->
+    <!-- <section class="bg-gray-100">
       <Container class="py-12 md:py-20">
         <SectionTitle class="text-center">Latest News</SectionTitle>
         <div class="grid grid-cols-1 gap-4 mx-auto mt-5 mb-2 lg:mt-10 lg:gap-5 lg:grid-cols-4">
@@ -127,7 +129,7 @@
           </div>
         </div>
       </Container>
-    </section>
+    </section> -->
   </div>
 </template>
 <script>
@@ -139,6 +141,10 @@ export default {
   data() {
     return {
       test: [],
+      welcome:
+        "Switching to Prodigy Energy would eliminate air pollution annually, while first slowing and then reversing the effects of global warming and stabilizing the global energy sector.",
+      businessOverview: `We're proud to say all our energy is generated in renewable and sustainable ways.
+Renewables were the only energy source for which demand increased in 2020 despite the pandemic, while consumption of all other fuels declined. Rapid technology improvements and decreasing costs of renewable energy`,
       images: [
         {
           src: "https://www.tbsenergi.com/app/sam/assets/images/e511286a99df2c7466aeae8fcca5851b.jpg?v=1623770296",
@@ -154,7 +160,7 @@ export default {
         },
       ],
       ourBusiness: {
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolore nemo nulla non reprehenderit ullam nostrum repudiandae distinctio ea accusantium? Libero earum atque, dicta blanditiis repudiandae, hic nulla unde reiciendis ab ipsam inventore, ullam enim magnam quidem incidunt? Optio cupiditate, ea totam quasi et molestias soluta! Mollitia doloribus a magnam iusto quas! Quam incidunt dolor optio. Nemo magni molestiae neque iure praesentium reprehenderit dicta tenetur omnis animi, porro vitae ut, corrupti quidem itaque doloribus nisi.",
+        text: "Prodigy Green Energy is facilitating the Energy Transition, as an independent renewable energy company. We are developing and operating first-class renewable energy. Our strategic focus is to facilitate the Renewable Energy Transition: we are developing the infrastructure needed for our customers to move towards ever more sustainable and low carbon energy use. Our development efforts are focused on establishing expandable platforms located at key crossroads of energy flows. We will continue to expand our network to facilitate our customers’ renewable energy development.",
         type: [
           {
             name: "Power Plant",
