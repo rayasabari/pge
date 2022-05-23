@@ -13,9 +13,9 @@
         class="w-full h-[350px] bg-center bg-cover flex flex-col justify-end group-hover:scale-110 transition duration-500 overflow-hidden"
       ></div>
       <div
-        class="absolute inset-x-0 top-0 flex h-[150px] transition-all duration-300 group-hover:h-full flex-col p-4 text-center bg-gradient-to-b from-gray-600  bg-opacity-60 group-hover:bg-opacity-60  lg:text-left"
+        class="absolute inset-x-0 top-0 flex h-[150px] transition-all duration-300 group-hover:h-full flex-col p-4 bg-gradient-to-b from-gray-600  bg-opacity-60 group-hover:bg-opacity-60"
       >
-        <h3 class="mb-2 text-xl font-medium text-white">{{item.text}}</h3>
+        <h3 class="mb-2 text-xl font-semibold text-white">{{item.text}}</h3>
         <p
           class="hidden text-white transition duration-300 group-hover:flex text-opacity-70 group-hover:text-opacity-90"
         >{{item.desc}}</p>

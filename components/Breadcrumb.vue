@@ -1,7 +1,7 @@
 <template>
   <section class="md:h-[125px] h-[90px] flex items-end">
     <Container>
-      <ul class="flex items-center gap-2 text-xs text-gray-400">
+      <ul class="flex items-center gap-1 text-xs text-gray-400 md:gap-2">
         <li class="group">
           <NuxtLink
             to="/"

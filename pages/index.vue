@@ -1,8 +1,8 @@
 <template>
   <div class="min-h-screen">
     <Hero :images="images" />
-    <section class="bg-gray-50 md:bg-white" id="welcome-section">
-      <Container class="py-5 md:py-14">
+    <section class="bg-white" id="welcome-section">
+      <Container class="py-16">
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
           <CardWelcome
             data-aos="fade"
@@ -25,7 +25,7 @@
     </section>
     <section data-aos="fade-up" data-aos-duration="800" class="bg-downloadable-section bg-conver">
       <div class="w-full h-full md:bg-gradient-to-r md:from-white md:to-transparent">
-        <Container class="py-5 md:py-16">
+        <Container class="py-12 md:py-16">
           <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div
               data-aos="fade"
@@ -34,7 +34,7 @@
               class="p-5 bg-white bg-opacity-30 rounded-2xl backdrop-blur-lg"
             >
               <SectionTitle>Downloadable Content</SectionTitle>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore aut fugit pariatur obcaecati sapiente perferendis repellat eligendi laborum, consectetur suscipit voluptas quo reprehenderit distinctio sit quos eius nostrum? Harum, expedita?</p>
+              <p class="leading-relaxed text-gray-600 md:text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore aut fugit pariatur obcaecati sapiente perferendis repellat eligendi laborum, consectetur suscipit voluptas quo reprehenderit distinctio sit quos eius nostrum? Harum, expedita?</p>
             </div>
             <div
               data-aos="fade"
@@ -62,12 +62,12 @@
         <div class="grid gap-5 lg:gap-8 lg:grid-cols-3">
           <div
             data-aos="fade"
-            class="p-5 text-center bg-white shadow-lg rounded-xl lg:shadow-none lg:text-left"
+            class="p-5 rounded-xl"
           >
             <SectionTitle>Our Business</SectionTitle>
-            <p>{{ ourBusiness.text }}</p>
+            <p class="leading-relaxed">{{ ourBusiness.text }}</p>
           </div>
-          <div class="grid grid-cols-1 gap-4 overflow-hidden lg:gap-8 lg:grid-cols-3 lg:col-span-2">
+          <div class="grid grid-cols-1 gap-4 overflow-hidden lg:gap-5 lg:grid-cols-3 lg:col-span-2">
             <NuxtLink
               v-for="(item,index) in ourBusiness.type"
               :key="index"
@@ -82,11 +82,11 @@
                 class="w-full h-[550px] bg-center bg-cover flex flex-col justify-end group-hover:scale-110 transition duration-500"
               ></div>
               <div
-                class="absolute inset-x-0 bottom-0 flex flex-col p-4 text-center transition duration-300 bg-gray-700 group-hover:bg-primary-600 bg-opacity-60 group-hover:bg-opacity-60 backdrop-blur lg:text-left"
+                class="absolute inset-x-0 bottom-0 flex flex-col p-4 transition duration-300 bg-gray-700 group-hover:bg-primary-600 bg-opacity-60 group-hover:bg-opacity-60 backdrop-blur "
               >
                 <h3 class="mb-2 text-xl font-semibold text-white">{{item.name}}</h3>
                 <p
-                  class="text-white transition duration-300 text-opacity-70 group-hover:text-opacity-90"
+                  class="text-sm leading-relaxed text-white transition duration-300 text-opacity-70 group-hover:text-opacity-90"
                 >{{item.desc}}</p>
               </div>
             </NuxtLink>

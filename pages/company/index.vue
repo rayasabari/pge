@@ -4,7 +4,6 @@
     <div id="page-content">
       <PageContainer>
         <section
-          class="text-center md:text-left"
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="1000"
@@ -15,15 +14,15 @@
             class="mb-10 rounded-lg md:mb-12"
           />
           <SectionTitle>Company</SectionTitle>
-          <p>
+          <p class="leading-relaxed">
             <span class="font-bold">Prodigy Green Energy</span> is an Indonesian green technology company with headquartered in Jakarta. Prodigy Green Energy provides:
           </p>
-          <ul class="px-4 py-2 list-disc">
+          <ul class="px-4 py-2 leading-relaxed list-disc">
             <li>end to end green and renewable energy.</li>
             <li>generates green energy from Solar PV plant on land, water and sea.</li>
             <li>provides energy transport and distribution in form of battery and energy storage system</li>
           </ul>
-          <p>We do EPC as well as an Investment company. As an engineering, procurement, construction and commission company, Prodigy Green Energy provides innovative electrical energy storages, power quality systems, and services. Scalable and modular power electronics, intelligent software technologies, and electrical engineering expertise are the base of our business.</p>
+          <p class="leading-relaxed">We do EPC as well as an Investment company. As an engineering, procurement, construction and commission company, Prodigy Green Energy provides innovative electrical energy storages, power quality systems, and services. Scalable and modular power electronics, intelligent software technologies, and electrical engineering expertise are the base of our business.</p>
         </section>
       </PageContainer>
     </div>

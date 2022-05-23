@@ -12,15 +12,15 @@
       <div class="flex flex-col justify-between w-full p-4 md:w-8/12">
         <div>
           <h2
-            class="mb-2 text-xl font-semibold text-primary-500 group-hover:text-primary-600"
+            class="mb-2 text-xl font-medium leading-relaxed text-primary-500 group-hover:text-primary-600"
           >{{item.title}}</h2>
-          <div class="text-sm">
+          <div class="text-xs">
             Published at:
             <span class="text-gray-400">{{item.published_at}}</span>
           </div>
         </div>
         <div>
-          <div class="pt-4 pb-2">{{ item.excerpt }}</div>
+          <div class="pt-4 pb-2 text-sm leading-relaxed">{{ item.excerpt }}</div>
           <div>
             <NuxtLink to="/" class="font-medium text-primary-500 hover:text-primary-600">Read More</NuxtLink>
           </div>

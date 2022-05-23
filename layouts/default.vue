@@ -14,7 +14,7 @@ export default {
       class: "scroll-smooth",
     },
     bodyAttrs: {
-      class: "font-poppins text-gray-500",
+      class: "font-poppins text-gray-400",
     },
   },
   data() {

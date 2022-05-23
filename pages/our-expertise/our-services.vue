@@ -1,13 +1,11 @@
 <template>
   <div class="min-h-screen">
     <Breadcrumb :title="'Our Expertise'"></Breadcrumb>
-    <div id="page-content" class="pt-10 md:pt-0">
+    <div id="page-content">
       <PageContainer>
-        <section class="mt-12" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-          <SectionTitle class="text-center md:text-left">Our Services</SectionTitle>
-          <div
-            class="mb-8 text-center md:text-left"
-          >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere!</div>
+        <section data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <SectionTitle>Our Services</SectionTitle>
+          <div class="mb-8 leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere!</div>
           <CardServices :services="services" />
         </section>
       </PageContainer>

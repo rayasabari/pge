@@ -4,7 +4,7 @@
     <div id="page-content">
       <PageContainer>
         <section data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-          <SectionTitle class="text-center md:text-left">Management Profiles</SectionTitle>
+          <SectionTitle>Management Profiles</SectionTitle>
           <ListProfiles :profiles="profiles" />
         </section>
       </PageContainer>
