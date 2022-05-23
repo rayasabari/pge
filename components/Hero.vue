@@ -20,8 +20,8 @@
                 :data-aos-delay="1000"
                 class="mb-2 text-center text-white md:mb-0 text-md md:text-xl text-opacity-60"
               >and you'll reduce your carbon footprint and your reduce electric bills</div>
-              <div data-aos="fade" :data-aos-duration="1000" :data-aos-delay="1500">
-                <Button>Get Started</Button>
+              <div data-aos="fade" class="flex items-center justify-center py-4 md:py-5"  :data-aos-duration="1000" :data-aos-delay="1500">
+                <a href="#welcome-section" class="btn-pge">Discover</a>
               </div>
             </Container>
           </div>
