@@ -4,7 +4,6 @@
     <div id="page-content">
       <PageContainer>
         <section
-          class="text-center md:text-left"
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="1000"
