@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen">
     <Hero :images="images" />
-    <section class="bg-gray-50 md:bg-white">
+    <section class="bg-gray-50 md:bg-white" id="welcome-section">
       <Container class="py-5 md:py-14">
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
           <CardWelcome
