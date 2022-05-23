@@ -10,7 +10,7 @@
         <li
           v-for="menu in menus"
           :key="menu.name"
-          class="overflow-hidden text-center text-gray-400 bg-gray-100 rounded-lg md:text-left"
+          class="overflow-hidden text-gray-400 bg-gray-100 rounded-lg"
         >
           <NuxtLink
             :to="menu.link"

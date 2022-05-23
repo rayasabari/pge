@@ -32,12 +32,12 @@ const listMenu = [
     link: "/projects",
     sub: [
       {
-        name: "Projects Schema",
-        link: "/projects/projects-schema",
+        name: "Projects Approach",
+        link: "/projects/projects-approach",
       },
       {
-        name: "Projects and Achievments",
-        link: "/projects/projects-and-achievments",
+        name: "Projects and Achievements",
+        link: "/projects/projects-and-achievements",
       },
     ],
   },

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full p-5 text-center bg-white shadow-lg md:shadow-none rounded-xl md:text-left">
+  <div class="w-full p-5 bg-white rounded-xl">
     <SectionTitle>{{title}}</SectionTitle>
     <p class="mb-3 leading-relaxed">{{paragraph}}</p>
     <!-- <a
