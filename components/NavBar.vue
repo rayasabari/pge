@@ -10,8 +10,14 @@
             exact
             to="/"
             exact-active-class="text-exact-active"
-            class="font-semibold text-gray-600 text-md lg:text-xl"
-          >{{brand}}</NuxtLink>
+            class="flex items-center gap-3 font-semibold"
+          >
+            <img src="/pge-logo.webp" class="h-10" alt="Prodigy Green Energy Logo" />
+            <div class="flex flex-col uppercase text-primary-800">
+              <div class="text-lg leading-4 tracking-extra-wide">Prodigy</div>
+              <div class="mt-1 text-sm font-medium leading-3">Green Energy</div>
+            </div>
+          </NuxtLink>
 
           <!-- Toggle Menu -->
           <div class="flex items-center lg:hidden">
@@ -58,14 +64,14 @@
 </template>
 
 <script>
-import listMenu from '../services/data/listMenu';
+import listMenu from "../services/data/listMenu";
 export default {
   name: "NavBar",
   data() {
     return {
       isOpen: false,
       brand: "Prodigy Green Energy",
-      menus: listMenu
+      menus: listMenu,
     };
   },
   mounted() {

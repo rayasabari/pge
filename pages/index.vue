@@ -34,7 +34,9 @@
               class="p-5 bg-white bg-opacity-30 rounded-2xl backdrop-blur-lg"
             >
               <SectionTitle>Downloadable Content</SectionTitle>
-              <p class="leading-relaxed text-gray-600 md:text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore aut fugit pariatur obcaecati sapiente perferendis repellat eligendi laborum, consectetur suscipit voluptas quo reprehenderit distinctio sit quos eius nostrum? Harum, expedita?</p>
+              <p
+                class="leading-relaxed text-gray-600 md:text-gray-400"
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore aut fugit pariatur obcaecati sapiente perferendis repellat eligendi laborum, consectetur suscipit voluptas quo reprehenderit distinctio sit quos eius nostrum? Harum, expedita?</p>
             </div>
             <div
               data-aos="fade"
@@ -60,10 +62,7 @@
     <section class="md:bg-white bg-gray-50">
       <Container class="py-5 lg:py-14">
         <div class="grid gap-5 lg:gap-8 lg:grid-cols-3">
-          <div
-            data-aos="fade"
-            class="p-5 rounded-xl"
-          >
+          <div data-aos="fade" class="p-5 rounded-xl">
             <SectionTitle>Our Business</SectionTitle>
             <p class="leading-relaxed">{{ ourBusiness.text }}</p>
           </div>
@@ -82,7 +81,7 @@
                 class="w-full h-[550px] bg-center bg-cover flex flex-col justify-end group-hover:scale-110 transition duration-500"
               ></div>
               <div
-                class="absolute inset-x-0 bottom-0 flex flex-col p-4 transition duration-300 bg-gray-700 group-hover:bg-primary-600 bg-opacity-60 group-hover:bg-opacity-60 backdrop-blur "
+                class="absolute inset-x-0 bottom-0 flex flex-col p-4 transition duration-300 bg-gray-700 group-hover:bg-primary-600 bg-opacity-60 group-hover:bg-opacity-60 backdrop-blur"
               >
                 <h3 class="mb-2 text-xl font-semibold text-white">{{item.name}}</h3>
                 <p
@@ -129,7 +128,7 @@
           </div>
         </div>
       </Container>
-    </section> -->
+    </section>-->
   </div>
 </template>
 <script>
@@ -147,15 +146,15 @@ export default {
 Renewables were the only energy source for which demand increased in 2020 despite the pandemic, while consumption of all other fuels declined. Rapid technology improvements and decreasing costs of renewable energy`,
       images: [
         {
-          src: "https://www.tbsenergi.com/app/sam/assets/images/e511286a99df2c7466aeae8fcca5851b.jpg?v=1623770296",
+          src: "/hero-3.webp",
           caption: " Lorem ipsum dolor sit amet.",
         },
         {
-          src: "https://www.tbsenergi.com/app/sam/assets/images/5c2c816d4d55b68e65e26359f1e3a940.png?v=1632725589",
+          src: "/hero-1.webp",
           caption: " Lorem ipsum dolor sit amet.",
         },
         {
-          src: "https://www.tbsenergi.com/app/sam/assets/images/8ba7c0967969ab511686523693854cf8.jpg?v=1623770297",
+          src: "hero-2.webp",
           caption: " Lorem ipsum dolor sit amet.",
         },
       ],
@@ -163,22 +162,19 @@ Renewables were the only energy source for which demand increased in 2020 despit
         text: "Prodigy Green Energy is facilitating the Energy Transition, as an independent renewable energy company. We are developing and operating first-class renewable energy. Our strategic focus is to facilitate the Renewable Energy Transition: we are developing the infrastructure needed for our customers to move towards ever more sustainable and low carbon energy use. Our development efforts are focused on establishing expandable platforms located at key crossroads of energy flows. We will continue to expand our network to facilitate our customers’ renewable energy development.",
         type: [
           {
-            name: "Power Plant",
+            name: "Lorem Ipsum",
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, quisquam reiciendis labore illo dolorem commodi?",
-            image:
-              "https://www.tbsenergi.com/app/sam/assets/images/f07d3a35cdaccc8ccbff57dae5f22bb7.jpg?v=1632196062",
+            image: require("../assets/images/expertise/wind.webp"),
           },
           {
-            name: "Mining Coal",
+            name: "Lorem Ipsum",
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, quisquam reiciendis labore illo dolorem commodi?",
-            image:
-              "https://www.tbsenergi.com/app/sam/assets/images/0ecbec8935e06b14a5bba736f0344586.jpg?v=1632196422",
+            image: require("../assets/images/expertise/solar.webp"),
           },
           {
-            name: "Plantation PKU",
+            name: "Lorem Ipsum",
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, quisquam reiciendis labore illo dolorem commodi?",
-            image:
-              "https://www.tbsenergi.com/app/sam/assets/images/a931aa9e1337d218818ff703bf7bf4b5.jpg?v=1623770296",
+            image: require("../assets/images/expertise/hydropower.webp"),
           },
         ],
       },
