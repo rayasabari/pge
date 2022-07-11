@@ -9,9 +9,9 @@
           data-aos-duration="1000"
         >
           <img
-            src="https://www.tbsenergi.com/app/sam/assets/images/e511286a99df2c7466aeae8fcca5851b.jpg?v=1623770296"
+            src="/green-energy-1.webp"
             alt="about us"
-            class="mb-10 rounded-lg md:mb-12"
+            class="mb-10 rounded-lg md:mb-12 h-[400px] w-full object-cover"
           />
           <SectionTitle>Company</SectionTitle>
           <p class="leading-relaxed">

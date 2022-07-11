@@ -12,7 +12,7 @@
                 data-aos="fade"
                 :data-aos-duration="1000"
                 :data-aos-delay="500"
-                class="mb-4 text-3xl font-semibold tracking-tight text-center text-white md:leading-tight md:text-5xl"
+                class="mb-4 text-4xl font-semibold tracking-tight text-center text-white md:text-5xl"
               >
                 Switch to one of the
                 <span
@@ -23,7 +23,7 @@
                 data-aos="fade"
                 :data-aos-duration="1000"
                 :data-aos-delay="1000"
-                class="mb-2 text-center text-white text-md md:mb-0 md:text-xl text-opacity-80"
+                class="mb-2 font-medium text-center text-white md:mb-0 md:text-xl text-opacity-80"
               >Reduce your carbon footprint and reduce your electric bills!</div>
               <div
                 data-aos="fade"
