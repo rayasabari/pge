@@ -7,6 +7,8 @@
 </template>
 
 <script>
+import { Loading } from "notiflix/build/notiflix-loading-aio";
+
 export default {
   name: "DefaultLayout",
   head: {
@@ -17,20 +19,12 @@ export default {
       class: "font-poppins text-gray-500",
     },
   },
-  data() {
-    return {
-      loading: true,
-    };
-  },
   mounted() {
-    // Loading.dots({
-    //   backgroundColor: "#fff",
-    //   svgColor: "#14b8a6",
-    // });
-    // setTimeout(() => {
-    //   this.loading = false;
-    //   Loading.remove();
-    // }, 700);
+    Loading.arrows({ backgroundColor: "#fff" });
+    setTimeout(() => {
+      Loading.remove();
+    }, 700);
+
     this.setViewHeight();
     window.addEventListener("resize", () => {
       this.setViewHeight();

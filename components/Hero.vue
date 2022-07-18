@@ -7,12 +7,12 @@
           :style="`background-image: url(${image.src})`"
         >
           <div class="flex items-center w-full h-screen backdrop-blur backdrop-brightness-75">
-            <Container class="flex flex-col items-center justify-center w-full h-full md:w-1/2">
+            <Container class="flex flex-col items-center justify-center w-full h-full md:w-7/12">
               <div
                 data-aos="fade"
                 :data-aos-duration="1000"
                 :data-aos-delay="500"
-                class="mb-4 text-4xl font-semibold tracking-tight text-center text-white md:text-5xl"
+                class="mb-4 text-4xl font-semibold tracking-tight text-center text-white md:text-6xl"
               >
                 Switch to one of the
                 <span

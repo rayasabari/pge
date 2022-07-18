@@ -34,7 +34,6 @@
 </template>
 
 <script>
-import "../assets/css/agile.css";
 
 export default {
   props: ["title"],
